@@ -1,0 +1,23 @@
+-- function factoriall(n)
+--   if n ==0 then
+--     return 1
+--   else
+--     return n * factoriall(n - 1)
+--   end
+-- end
+--
+-- print(factoriall(5))
+--
+-- factoriall2 = factoriall
+-- print(factoriall2(4))
+
+
+-- function anonymous(tab, fun)
+--   for k, v in pairs(tab) do
+--     print(fun(k, v))
+--   end
+-- end
+-- tab = {key1 = 'val1', key2 = 'val2', key3 = 'val3', 4}
+-- anonymous(tab, function(key, val)
+--   return key .. '=' ..val
+-- end)
