@@ -11,15 +11,15 @@ end
 function consumer()
   local j = 0
   while j < 3 do
-    local i = receive()
+    local status, value = receive()
     j = j + 1
-    print(i)
+    print(status,value)
   end
 end
 
 function receive()
   local status, value = coroutine.resume(newProducer)
-  return value
+  return status, value
 
 end
 
